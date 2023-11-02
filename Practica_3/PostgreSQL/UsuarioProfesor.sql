@@ -1,0 +1,6 @@
+DROP USER IF EXISTS profesor;
+
+CREATE USER profesor WITH PASSWORD 'rubenp';
+GRANT CONNECT ON DATABASE practica1 TO profesor;
+GRANT USAGE ON SCHEMA public TO profesor;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO profesor;

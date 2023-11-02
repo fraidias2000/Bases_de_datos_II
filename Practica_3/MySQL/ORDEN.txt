@@ -1,0 +1,4 @@
+1- CrearBD.SQL
+2- CrearTablas.sql
+3- CrearTablasTemporales.sql
+4- InsertarDatos.sql
