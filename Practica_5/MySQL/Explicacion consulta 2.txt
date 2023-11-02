@@ -1,0 +1,7 @@
+Para obtener la universidad que más alumnos recibe de cada centro en el 2020, 
+podemos utilizar una subconsulta que obtenga el número máximo de alumnos por centro y año, 
+y luego unir esa subconsulta con la tabla de convenios y la tabla de universidades para obtener 
+el nombre de la universidad correspondiente.
+
+La consulta devuelve cuatro columnas: el nombre del centro, el nombre de la universidad que más alumnos 
+recibe en el centro en el 2020, el año y el número de alumnos que recibió la universidad en ese centro y año.

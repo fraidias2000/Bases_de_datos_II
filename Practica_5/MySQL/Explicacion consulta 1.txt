@@ -1,0 +1,8 @@
+Explicación de la consulta:
+
+1º La consulta se une a las tablas LOCALIDAD, CENTRO, RESULTADO y ESTUDIO utilizando la cláusula INNER JOIN.
+2º Se filtran los resultados para que solo se consideren los registros del curso 2020.
+3º Se utiliza una subconsulta para contar el número de registros con un índice de ocupación mayor o igual al índice de ocupación actual. Si este número es menor o igual a 2, se incluye el registro actual en los resultados.
+4º Se agrupan los resultados por localidad, estudio e índice de ocupación.
+5º Los resultados se ordenan por localidad y por índice de ocupación de manera descendente.
+Esta consulta devolverá los dos estudios de cada localidad con el mayor índice de ocupación en el 2020. La columna localidad mostrará el nombre de la localidad, la columna estudio mostrará el nombre del estudio y la columna indice_ocupacion mostrará el índice de ocupación correspondiente.
