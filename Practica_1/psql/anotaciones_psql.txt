@@ -1,0 +1,16 @@
+ANOTACIONES SCRIPT PSQL
+
+EL Script que se debe ejecutar es bd2_p1_psql.sh
+
+1)Dar permiso al script inicial para poder ejecutarlo
+2)Modificar el fichero pg_hba.conf en el directorio /etc/postgresql/version/main (poniendo en version el número de version del que disponga)
+  Hay que editar la línea que sale debajo del comentario: # Database administrative login by Unix domain socket. Justo debajo de este comentario sale, local all postgres peer; y se debe modificar el peer por md5.
+  Y así con todos aquellos que esten en peer ponerlos a md5.
+  Una vez modificada la línea se debe reiniciar posgres con los nuevos cambios de la siguiente forma: sudo /etc/init.d/postgresql restart
+
+3)Cambiar de los scripts:
+
+	bd2_p1_mysql.sh
+
+	- Poner la contraseña del usuario postgres que se tenga en ese dispositivo
+	- Cambiar la dirección de la instrucción de chmod, en la línea 10, con el directorio donde se encuentren los scripts alojados
